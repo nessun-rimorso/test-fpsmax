@@ -8,8 +8,8 @@ body {
   margin: 0;
 
   font-family: $muller;
-  font-size: 30px;
-  font-weight: normal;
+  font-size: 1vw;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.5;
@@ -19,10 +19,10 @@ body {
   background-color: $fill;
 }
 
-//img {
-//  width: 100%;
-//  height: auto;
-//}
+img {
+  width: 100%;
+  height: auto;
+}
 
 button,
 a {

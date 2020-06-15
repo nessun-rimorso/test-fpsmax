@@ -1,0 +1,22 @@
+.final {
+  padding-top: 2.5%;
+  padding-bottom: 2%;
+
+  &__title {
+    margin: 0 0 .7%;
+    padding: 2.35% 3% 1.5%;
+
+    font-size: 1.25em;
+    text-align: center;
+
+    background-color: $white;
+    border-radius: 6px 6px 0 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    background-color: $white;
+  }
+}

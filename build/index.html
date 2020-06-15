@@ -12,230 +12,266 @@
     <header class="main__header">
         <h1 class="main__title">Матч Lucid Dream vs Astro </h1>
         <a class="main__link" href="#">
-            <svg width="40" height="26"><path d="M13.42 0a1.825 1.825 0 00-1.56 1.079L6.84 12.054H1.86a1.904 1.904 0 00-.04 3.807h6.21a1.848 1.848 0 001.68-1.1l3.83-8.353 8.18 18.482a1.83 1.83 0 002.46.931 1.737 1.737 0 00.9-.952l3.81-8.987h9.24a1.904 1.904 0 00.04-3.807H27.66a1.825 1.825 0 00-1.68 1.121l-2.64 6.259-8.12-18.313A1.858 1.858 0 0013.42 0z" fill="#17c06d" fill-rule="evenodd"></path></svg>
-            <span>График изменения ставок</span>
+            <span class="main__link-icon"></span>
+            График изменения ставок
         </a>
     </header>
     <section class="main__final final">
         <h2 class="final__title">NEX Invitational 2019 Thailand Finals</h2>
         <div class="final__wrapper">
-            <div class="final__team">
-                <div class="final__betting">
-                    <div class="final__row">
-                        <div class="final__col">
-                            <strong class="final__money">714 292 Р</strong>
-                            <div class="final__row">
-                                <span class="final__percent">88%</span>
-                                <span class="final__bet">x1.12</span>
-                            </div>
+            <div class="final__team team">
+                <div class="team__wrapper">
+                    <div class="team__col">
+                        <strong class="team__money">714 292 Р</strong>
+                        <div class="team__row">
+                            <span class="team__bet">88%</span>
+                            <span class="team__bet">x1.12</span>
                         </div>
-                        <img class="final__team-avatar" src="img/avatar-teams-virtus_pro.png" alt="team avatar" width="158" height="164">
                     </div>
-                    <button class="final__button-bet final__button-bet--win" type="button">
-                        <strong>Lucide Dream</strong>
+                    <div class="team__avatar">
+                        <img src="img/avatar-teams-virtus_pro.png">
+                    </div>
+                </div>
+                <button class="team__button-bet team__button-bet--win" type="button">
+                        <strong class="team__name">Lucide Dream</strong>
                         <span>на победу в матче</span>
                     </button>
-                </div>
-
             </div>
-            <div class="final__score">
-                <div class="final__scoreboard">
-                    <span class="final__game">BO3</span>
-                    <strong class="final__account">3 : 0</strong>
-                    <span class="final__date">30 Aug 14:00 GMT-3</span>
+            <div class="final__scoreboard scoreboard">
+                <div class="scoreboard__board">
+                    <span class="scoreboard__game">BO3</span>
+                    <strong class="scoreboard__score">3 : 0</strong>
+                    <span class="scoreboard__date">30 Aug 14:00 GMT-3</span>
                 </div>
             </div>
-            <div class="final__team final__team-right">
-                <div class="final__betting">
-                    <div class="final__row">
-                        <div class="final__col">
-                            <strong class="final__money">714 292 Р</strong>
-                            <div class="final__row">
-                                <span class="final__percent">88%</span>
-                                <span class="final__bet">x1.12</span>
-                            </div>
+            <div class="final__team team team--right">
+                <div class="team__wrapper">
+                    <div class="team__col">
+                        <strong class="team__money">53 360 Р</strong>
+                        <div class="team__row">
+                            <span class="team__bet">12%</span>
+                            <span class="team__bet">x5.12</span>
                         </div>
-                        <img class="final__team-avatar" src="img/avatar-teams-virtus_pro.png" alt="team avatar" width="158" height="164">
                     </div>
-                    <button class="final__button-bet final__button-bet--win" type="button">
-                        <strong>Lucide Dream</strong>
+                    <div class="team__avatar">
+                        <img src="img/avatar-teams-windigo_gaming.png">
+                    </div>
+                </div>
+                <button class="team__button-bet" type="button">
+                        <strong class="team__name">Windigo Gaming</strong>
                         <span>на победу в матче</span>
                     </button>
+            </div>
+        </div>
+    </section>
+    <section class="main__comparison comparison">
+        <h2 class="comparison__title">Сравнить команды</h2>
+        <div class="comparison__wrapper">
+            <div class="comparison__team">
+                <span class="comparison__name">Unique Flames</span>
+                <div class="comparison__avatar avatar avatar--unique_flames">
+                </div>
+            </div>
+            <div class="comparison__board">
+                <div class="comparison__row">
+                    <strog>52%</strog>
+                    <span>BO3</span>
+                    <strog>48%</strog>
+                </div>
+                <div class="comparison__row">
+                    <strog>40%</strog>
+                    <span>BO3</span>
+                    <strog>60%</strog>
+                </div>
+            </div>
+            <div class="comparison__team">
+                <span class="comparison__name">Movistar Riders</span>
+                <div class="comparison__avatar avatar avatar--movistar_riders">
                 </div>
             </div>
         </div>
     </section>
-    <section class="main__about-teams about-teams">
-        <div class="about-teams__comparison comparison">
-            <h2 class="comparison__title">Сравнить команды </h2>
-            <div class="comparison__wrapper">
-                <div class="comparison__team">
-                    <span>Unique Flames</span>
-                </div>
-                <div class="comparison__board">
-                    <div class="comparison__row">
-                        52%
-                        <span>BO3</span>
-                        48%
+    <section class="main__matches matches">
+        <div class="matches__last-games">
+            <h3 class="matches__title">Последние матчи Unique Flames</h3>
+            <ul class="matches__competitors competitors">
+                <li class="competitors__item">
+                    <div class="competitors__img competitors__img--win">
+                        <div class="avatar avatar--chiefs"></div>
                     </div>
-                </div>
-                <div class="comparison__team">
-                    <span>Movistar Riders</span>
-                </div>
-            </div>
+                    <strong class="competitors__name">vs Chiefs</strong>
+                    <span class="competitors__date">26.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">2</span>
+                        :
+                        <span class="competitors__score">0</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img">
+                        <div class="avatar avatar--nochance"></div>
+                    </div>
+                    <strong class="competitors__name">vs NoChance</strong>
+                    <span class="competitors__date">25.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">0</span>
+                        :
+                        <span class="competitors__score">1</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img competitors__img--win">
+                        <div class="avatar avatar--fate"></div>
+                    </div>
+                    <strong class="competitors__name">vs FATE</strong>
+                    <span class="competitors__date">21.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">5</span>
+                        :
+                        <span class="competitors__score">3</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img">
+                        <div class="avatar avatar--tricked"></div>
+                    </div>
+                    <strong class="competitors__name">vs Tricked</strong>
+                    <span class="competitors__date">30.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">0</span>
+                        :
+                        <span class="competitors__score">3</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img">
+                        <div class="avatar avatar--pro100"></div>
+                    </div>
+                    <strong class="competitors__name">vs pro100</strong>
+                    <span class="competitors__date">01.07.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">2</span>
+                        :
+                        <span class="competitors__score">7</span>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="about-teams__matches matches">
-            <div class="matches__last-games">
-                <h3 class="matches__title">Последние матчи Unique Flames</h3>
-                <ul class="matches__competitors competitors">
-                    <li class="competitors__item">
-                        <div class="competitors__img competitors__img--win"></div>
-                        <strong class="competitors__name">vs Chiefs</strong>
-                        <span class="competitors__date">26.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">2</span>
-                            :
-                            <span class="competitors__score">0</span>
-                        </div>
-                    </li>
-                    <li class="competitors__item">
-                        <div class="competitors__img"></div>
-                        <strong class="competitors__name">vs NoChance</strong>
-                        <span class="competitors__date">25.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">0</span>
-                            :
-                            <span class="competitors__score">1</span>
-                        </div>
-                    </li>
-                    <li class="competitors__item">
-                        <div class="competitors__img competitors__img--win"></div>
-                        <strong class="competitors__name">vs FATE</strong>
-                        <span class="competitors__date">21.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">5</span>
-                            :
-                            <span class="competitors__score">3</span>
-                        </div>
-                    </li>
-                    <li class="competitors__item">
-                        <div class="competitors__img"></div>
-                        <strong class="competitors__name">vs Tricked</strong>
-                        <span class="competitors__date">30.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">0</span>
-                            :
-                            <span class="competitors__score">3</span>
-                        </div>
-                    </li>
-                    <li class="competitors__item">
-                        <div class="competitors__img"></div>
-                        <strong class="competitors__name">vs pro100</strong>
-                        <span class="competitors__date">01.07.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">2</span>
-                            :
-                            <span class="competitors__score">7</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="matches__face-to-face ">
-                <h3 class="matches__title">Личные встречи</h3>
-                <ul class="matches__list">
-                    <li class="matches__item">
-                        <span class="matches__indicator matches__indicator--win"></span>
-                        <span class="matches__date">21.03.2019</span>
-                        <span class="matches__indicator"></span>
-                    </li>
-                    <li class="matches__item">
-                        <span class="matches__indicator"></span>
-                        <span class="matches__date">16.02.2019</span>
-                        <span class="matches__indicator matches__indicator--win"></span>
-                    </li>
-                    <li class="matches__item">
-                        <span class="matches__indicator matches__indicator--win"></span>
-                        <span class="matches__date">14.02.2019</span>
-                        <span class="matches__indicator"></span>
-                    </li>
-                    <li class="matches__item">
-                        <span class="matches__indicator matches__indicator--win"></span>
-                        <span class="matches__date">10.02.2019</span>
-                        <span class="matches__indicator"></span>
-                    </li>
-                    <li class="matches__item">
-                        <span class="matches__indicator"></span>
-                        <span class="matches__date">26.02.2019</span>
-                        <span class="matches__indicator matches__indicator--win"></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="matches__last-games">
-                <h3 class="matches__title">Последние матчи Moviestar Riders</h3>
-                <ul class="matches__competitors competitors">
-                    <li class="competitors__competitor">
-                        <div class="competitors__img"></div>
-                        <strong class="competitors__name">vs Tricked</strong>
-                        <span class="competitors__date">26.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">3</span>
-                            :
-                            <span class="competitors__score">6</span>
-                        </div>
-                    </li>
-                    <li class="competitors__competitor">
-                        <div class="competitors__img"></div>
-                        <strong class="competitors__name">vs Sprout</strong>
-                        <span class="competitors__date">25.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">4</span>
-                            :
-                            <span class="competitors__score">8</span>
-                        </div>
-                    </li>
-                    <li class="competitors__competitor">
-                        <div class="competitors__img competitors__img--win"></div>
-                        <strong class="competitors__name">vs HoP</strong>
-                        <span class="competitors__date">05.04.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">9</span>
-                            :
-                            <span class="competitors__score">2</span>
-                        </div>
-                    </li>
-                    <li class="competitors__competitor">
-                        <div class="competitors__img competitors__img--win"></div>
-                        <strong class="competitors__name">vs Fnatic</strong>
-                        <span class="competitors__date">30.03.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">7</span>
-                            :
-                            <span class="competitors__score">5</span>
-                        </div>
-                    </li>
-                    <li class="competitors__competitor">
-                        <div class="competitors__img"></div>
-                        <strong class="competitors__name">vs Chaos</strong>
-                        <span class="competitors__date">02.04.2019</span>
-                        <div class="competitors__scoreboard">
-                            <span class="competitors__score">4</span>
-                            :
-                            <span class="competitors__score">7</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="matches__face-to-face">
+            <h3 class="matches__title">Личные встречи</h3>
+            <ul class="matches__list">
+                <li class="matches__item">
+                    <span class="matches__indicator matches__indicator--win"></span>
+                    <span class="matches__date">21.03.2019</span>
+                    <span class="matches__indicator"></span>
+                </li>
+                <li class="matches__item">
+                    <span class="matches__indicator"></span>
+                    <span class="matches__date">16.02.2019</span>
+                    <span class="matches__indicator matches__indicator--win"></span>
+                </li>
+                <li class="matches__item">
+                    <span class="matches__indicator matches__indicator--win"></span>
+                    <span class="matches__date">14.02.2019</span>
+                    <span class="matches__indicator"></span>
+                </li>
+                <li class="matches__item">
+                    <span class="matches__indicator matches__indicator--win"></span>
+                    <span class="matches__date">10.02.2019</span>
+                    <span class="matches__indicator"></span>
+                </li>
+                <li class="matches__item">
+                    <span class="matches__indicator"></span>
+                    <span class="matches__date">26.02.2019</span>
+                    <span class="matches__indicator matches__indicator--win"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="matches__last-games">
+            <h3 class="matches__title">Последние матчи Moviestar Riders</h3>
+            <ul class="matches__competitors competitors">
+                <li class="competitors__item">
+                    <div class="competitors__img">
+                        <div class="avatar avatar--tricked-2"></div>
+                    </div>
+                    <strong class="competitors__name">vs Tricked</strong>
+                    <span class="competitors__date">26.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">3</span>
+                        :
+                        <span class="competitors__score">6</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img">
+                        <div class="avatar avatar--sprout"></div>
+                    </div>
+                    <strong class="competitors__name">vs Sprout</strong>
+                    <span class="competitors__date">25.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">4</span>
+                        :
+                        <span class="competitors__score">8</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img competitors__img--win">
+                        <div class="avatar avatar--hop"></div>
+                    </div>
+                    <strong class="competitors__name">vs HoP</strong>
+                    <span class="competitors__date">05.04.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">9</span>
+                        :
+                        <span class="competitors__score">2</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img competitors__img--win">
+                        <div class="avatar avatar--fnatic"></div>
+                    </div>
+                    <strong class="competitors__name">vs Fnatic</strong>
+                    <span class="competitors__date">30.03.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">7</span>
+                        :
+                        <span class="competitors__score">5</span>
+                    </div>
+                </li>
+                <li class="competitors__item">
+                    <div class="competitors__img">
+                        <div class="avatar avatar--chaos"></div>
+                    </div>
+                    <strong class="competitors__name">vs Chaos</strong>
+                    <span class="competitors__date">02.04.2019</span>
+                    <div class="competitors__scoreboard">
+                        <span class="competitors__score">4</span>
+                        :
+                        <span class="competitors__score">7</span>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="main__additional-event additional-event">
         <h2 class="additional-event__title">Дополнительные события на матч</h2>
-        <div class="additional-event__tabs tabs">
-            <a href="#" class="tabs__link">Все</a>
-            <a href="#" class="tabs__link">Матч</a>
-            <a href="#" class="tabs__link">Карта 1</a>
-            <a href="#" class="tabs__link">Карта 2</a>
-            <a href="#" class="tabs__link">Тотал</a>
-        </div>
+        <ul class="additional-event__tabs tabs">
+            <li class="tabs__item">
+                <a href="#" class="tabs__link tabs__link--active">Все</a>
+            </li>
+            <li class="tabs__item">
+                <a href="#" class="tabs__link">Матч</a>
+            </li>
+            <li class="tabs__item">
+                <a href="#" class="tabs__link">Карта 1</a>
+            </li>
+            <li class="tabs__item">
+                <a href="#" class="tabs__link">Карта 2</a>
+            </li>
+            <li class="tabs__item">
+                <a href="#" class="tabs__link">Тотал</a>
+            </li>
+        </ul>
         <div class="additional-event__wrapper">
             <section class="additional-event__table-event table-event">
                 <h3 class="table-event__title">Победитель</h3>

@@ -1,0 +1,80 @@
+.matches {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: $blue-light;
+
+  &__last-games {
+    width: 40%;
+  }
+
+  &__face-to-face {
+    width: 18%;
+  }
+
+  &__title {
+    margin: 0 0 2.2vw;
+    padding: 1.5vw;
+
+    font-size: 1.1em;
+    text-align: center;
+    color: $black;
+
+    background-color: $white;
+  }
+
+  &__list {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    color: $grey;
+
+    list-style: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+
+      width: 1px;
+      height: 100%;
+
+      background-color: rgba($grey-lightest, .5);
+    }
+
+    &::after {
+      left: unset;
+      right: 0;
+    }
+  }
+
+  &__competitors {
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 18% 2%;
+  }
+
+  &__indicator {
+    display: block;
+    width: 1vw;
+    padding-top: 2%;
+
+    background-color: $red;
+
+    &--win {
+      background-color: $green;
+    }
+  }
+}

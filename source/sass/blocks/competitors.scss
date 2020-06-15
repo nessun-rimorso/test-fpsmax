@@ -1,0 +1,76 @@
+.competitors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4% 2.7%;
+
+  list-style: none;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding-bottom: 3%;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    margin-bottom: 10%;
+
+    background-color: transparent;
+    border: 2px solid $red;
+    border-radius: 38%;
+
+    &--win {
+      border-color: $green;
+    }
+  }
+
+  &__name {
+    font-size: 1.1em;
+  }
+
+  &__date {
+    margin-bottom: 10%;
+
+    font-size: .8em;
+    color: $grey-light;
+  }
+
+  &__scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6em;
+    font-weight: 400;
+    color: $grey-light;
+  }
+
+  &__score {
+    display: block;
+    width: 2.3vw;
+    height: 2.4vw;
+
+    text-align: center;
+    color: $black-light;
+
+    background-color: $white;
+    border-radius: 10%;
+    box-shadow: 0 3px 10px 1px rgba(25,78,158,.11);
+
+    &:first-of-type {
+      margin-right: 6%;
+    }
+
+    &:last-of-type {
+      margin-left: 6%;
+    }
+  }
+}
