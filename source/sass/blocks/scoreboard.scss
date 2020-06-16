@@ -1,18 +1,18 @@
 .scoreboard {
   width: 16%;
-  padding: 1.5% 1% 8%;
+  padding: 2% 1% 8%;
 
   background-color: rgba($fill, 0.55);
   background-image: url("../img/image-counter-strike.png");
   background-repeat: no-repeat;
   background-size: 40%;
-  background-position: center 88%;
+  background-position: center 86%;
 
   &__board {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10%;
+    padding: 9%;
 
     color: $grey-light;
 

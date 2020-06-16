@@ -22,22 +22,14 @@
     color: $grey-darker;
     text-decoration: none;
 
+    &:hover:not(.tabs__link--active),
+    &:focus:not(.tabs__link--active) {
+      color: $blue;
+    }
+
     &--active {
       color: $black;
-      box-shadow: 0 16px 27px 0 rgba(6, 86, 249, 0.08);
-
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translateY(100%);
-
-        width: 100%;
-        padding-top: 1%;
-
-        background-color: $blue;
-      }
+      box-shadow: 0 16px 27px 0 rgba(6, 86, 249, 0.08), 0 3px 0 0 $blue;
     }
   }
 }

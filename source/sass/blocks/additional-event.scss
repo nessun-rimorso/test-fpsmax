@@ -15,6 +15,12 @@
   }
 
   &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3% 3.2%;
+
     background-color: $blue-light;
   }
 }
