@@ -26,6 +26,11 @@ a {
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out; }
 
+@media (max-width: 1023px) {
+  body {
+    min-width: 1023px;
+    font-size: 16px; } }
+
 @font-face {
   font-family: "Muller";
   font-weight: 400;
@@ -89,7 +94,7 @@ a {
   position: relative; }
 
 .comparison {
-  padding: .8% .8% .9%;
+  padding: .8% .8% 1%;
   background-color: #f9fbfd; }
   .comparison__title {
     margin: 0 0 .8%;
@@ -285,7 +290,6 @@ a {
     background-color: #ffffff; }
 
 .main {
-  min-width: 1024px;
   padding: 0 1.6%; }
   .main__header {
     display: -webkit-box;
@@ -313,6 +317,9 @@ a {
     color: #4c5768;
     background-color: #ffffff;
     border-radius: 0 0 6px 6px; }
+    .main__link:hover, .main__link:focus {
+      -webkit-box-shadow: inset 0 0 7px 0px #808790;
+              box-shadow: inset 0 0 7px 0px #808790; }
     .main__link::before {
       content: '';
       position: absolute;
@@ -491,7 +498,8 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 6%;
-    padding: 0 1%; }
+    padding: 0 1%;
+    width: 100%; }
   .team__col {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -503,11 +511,13 @@ a {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin: 0 11%; }
+    width: 100%;
+    margin: 0 2vw; }
   .team__avatar {
     display: block;
-    width: 27%; }
+    width: 8vw; }
   .team__money {
+    width: 100%;
     font-size: 2.2em;
     font-weight: 500;
     line-height: 1.1;
@@ -595,6 +605,10 @@ a {
             flex-direction: row-reverse;
     margin-top: -1.2%;
     padding: 0 2.5%; }
+  .team--right .team__money {
+    text-align: left; }
+  .team--right .team__avatar {
+    width: 7vw; }
   .team--right .team__row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
