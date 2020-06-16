@@ -255,124 +255,450 @@
     </section>
     <section class="main__additional-event additional-event">
         <h2 class="additional-event__title">Дополнительные события на матч</h2>
-        <ul class="additional-event__tabs tabs">
+        <ul class="additional-event__tabs tabs" id="myTab" role="tablist">
             <li class="tabs__item">
-                <a href="#" class="tabs__link tabs__link--active">Все</a>
+                <a class="tabs__link tabs__link--active" id="all-tab" data-toggle="tab" href="#all" role="tab">Все</a>
             </li>
             <li class="tabs__item">
-                <a href="#" class="tabs__link">Матч</a>
+                <a class="tabs__link" id="match-tab" data-toggle="tab" href="#match" role="tab">Матч</a>
             </li>
             <li class="tabs__item">
-                <a href="#" class="tabs__link">Карта 1</a>
+                <a class="tabs__link" id="map_1-tab" data-toggle="tab" href="#map_1" role="tab">Карта 1</a>
             </li>
             <li class="tabs__item">
-                <a href="#" class="tabs__link">Карта 2</a>
+                <a class="tabs__link" id="map_2-tab" data-toggle="tab" href="#map_2" role="tab">Карта 2</a>
             </li>
             <li class="tabs__item">
-                <a href="#" class="tabs__link">Тотал</a>
+                <a class="tabs__link" id="total-tab" data-toggle="tab" href="#total" role="tab">Тотал</a>
             </li>
         </ul>
-        <div class="additional-event__wrapper">
-            <section class="additional-event__table-event table-event">
-                <h3 class="table-event__title">Победитель</h3>
-                <table class="table-event__table table">
-                    <caption class="table__caption">Победитель (матч)</caption>
-                    <tr>
-                        <th class="table__head">Unique Flames</th>
-                        <th class="table__head">Windigo Gaming</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button class="table__button" type="button">
-                                2.00
-                            </button>
-                        </td>
-                        <td>
-                            <button class="table__button" type="button">
-                                1.85
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-                <table class="table-event__table table">
-                    <caption class="table__caption">Победитель (игра)</caption>
-                    <tr>
-                        <th class="table__head">Unique Flames</th>
-                        <th class="table__head">Windigo Gaming</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button class="table__button" type="button">
-                                2.00
-                            </button>
-                        </td>
-                        <td>
+        <div class="additional-event__wrapper" id="myTabContent">
+            <div class="additional-event__tab-panel active"  id="all" role="tabpanel" aria-labelledby="all-tab">
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Победитель</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Победитель (матч)</caption>
+                        <tr>
+                            <th class="table__head">Unique Flames</th>
+                            <th class="table__head">Windigo Gaming</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.00
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Победитель (игра)</caption>
+                        <tr>
+                            <th class="table__head">Unique Flames</th>
+                            <th class="table__head">Windigo Gaming</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.00
+                                </button>
+                            </td>
+                            <td>
 
-                            <button class="table__button" type="button">
-                                1.85
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section class="additional-event__table-event table-event">
-                <h3 class="table-event__title">Раунды</h3>
-                <table class="table-event__table table">
-                    <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
-                    <tr>
-                        <th class="table__head table__head--min">Line</th>
-                        <th class="table__head table__head--standard">Больше</th>
-                        <th class="table__head table__head--standard">Меньше</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button class="table__button" type="button">
-                                26.5
-                            </button>
-                        </td>
-                        <td>
-                            <button class="table__button" type="button">
-                                2.26
-                            </button>
-                        </td>
-                        <td>
-                            <button class="table__button" type="button">
-                                1.79
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-                <table class="table-event__table table">
-                    <caption class="table__caption">Гандикап по раундам -2.5</caption>
-                    <tr>
-                        <th class="table__head
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Раунды</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
+                        <tr>
+                            <th class="table__head table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    26.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.26
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.79
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Гандикап по раундам -2.5</caption>
+                        <tr>
+                            <th class="table__head
 table__head--min">Line</th>
-                        <th class="table__head table__head--standard">Больше</th>
-                        <th class="table__head table__head--standard">Меньше</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button class="table__button" type="button">
-                                -2.5
-                            </button>
-                        </td>
-                        <td>
-                            <button class="table__button" type="button">
-                                1.85
-                            </button>
-                        </td>
-                        <td>
-                            <button class="table__button" type="button">
-                                2.17
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-                <button class="table-event__more" type="button">
-                    Показать все события
-                    <span>+4</span>
-                </button>
-            </section>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    -2.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.17
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="table-event__more" type="button">
+                        Показать все события
+                        <span>+4</span>
+                    </button>
+                </section>
+            </div>
+
+            <div class="additional-event__tab-panel" id="match" role="tabpanel" aria-labelledby="match-tab">
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Победитель</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Победитель (матч)</caption>
+                        <tr>
+                            <th class="table__head">Unique Flames</th>
+                            <th class="table__head">Windigo Gaming</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.00
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Победитель (игра)</caption>
+                        <tr>
+                            <th class="table__head">Unique Flames</th>
+                            <th class="table__head">Windigo Gaming</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.00
+                                </button>
+                            </td>
+                            <td>
+
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="additional-event__tab-panel" id="map_1" role="tabpanel" aria-labelledby="map_1-tab">
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Раунды</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
+                        <tr>
+                            <th class="table__head table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    26.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.26
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.79
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Гандикап по раундам -2.5</caption>
+                        <tr>
+                            <th class="table__head
+table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    -2.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.17
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="additional-event__tab-panel" id="map_2" role="tabpanel" aria-labelledby="map_2-tab">
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Раунды</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
+                        <tr>
+                            <th class="table__head table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    26.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.26
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.79
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Гандикап по раундам -2.5</caption>
+                        <tr>
+                            <th class="table__head
+table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    -2.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.17
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="additional-event__tab-panel" id="total" role="tabpanel" aria-labelledby="total-tab">
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Раунды</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
+                        <tr>
+                            <th class="table__head table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    26.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.26
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.79
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Гандикап по раундам -2.5</caption>
+                        <tr>
+                            <th class="table__head
+table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    -2.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.17
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Раунды</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
+                        <tr>
+                            <th class="table__head table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    26.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.26
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.79
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Гандикап по раундам -2.5</caption>
+                        <tr>
+                            <th class="table__head
+table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    -2.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.17
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="additional-event__table-event table-event">
+                    <h3 class="table-event__title">Раунды</h3>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Кол-во раундов больше/меньше 26.5</caption>
+                        <tr>
+                            <th class="table__head table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    26.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.26
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.79
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-event__table table">
+                        <caption class="table__caption">Гандикап по раундам -2.5</caption>
+                        <tr>
+                            <th class="table__head
+table__head--min">Line</th>
+                            <th class="table__head table__head--standard">Больше</th>
+                            <th class="table__head table__head--standard">Меньше</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="table__button" type="button">
+                                    -2.5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    1.85
+                                </button>
+                            </td>
+                            <td>
+                                <button class="table__button" type="button">
+                                    2.17
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
         </div>
     </section>
 </main>

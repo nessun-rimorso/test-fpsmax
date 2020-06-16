@@ -4,7 +4,7 @@
   background-color: $blue-light;
 
   &__title {
-    margin: 0 0 1%;
+    margin: 0 0 .8%;
 
     font-size: 1em;
     text-align: center;
@@ -18,7 +18,7 @@
   }
 
   &__name {
-    margin-right: 5%;
+    margin-right: 4%;
   }
 
   &__team {
@@ -40,6 +40,7 @@
   &__board {
     width: 16%;
     padding: 0 1%;
+    margin: 0 0.5%;
   }
 
   &__row {

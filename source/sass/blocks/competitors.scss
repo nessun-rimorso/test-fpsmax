@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 8vw;
     padding-bottom: 3%;
   }
 
@@ -33,7 +33,13 @@
   }
 
   &__name {
+    width: 100%;
+
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__date {
