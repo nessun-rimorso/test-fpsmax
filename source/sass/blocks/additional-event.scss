@@ -1,0 +1,51 @@
+.additional-event {
+
+  &__title {
+    margin: 0;
+    padding: 1.5% 0 1.9%;
+
+    font-size: 1.1em;
+    text-align: center;
+
+    background-color: $white;
+  }
+
+  &__tabs {
+    margin: 0;
+  }
+
+  &__tab-panel {
+    position: absolute;
+    margin-left: -200%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3% 3.2%;
+
+    background-color: $blue-light;
+    //transform: translateX(-6000px);
+
+    transition: margin-left 200ms ease;
+
+    .table-event {
+      position: absolute;
+    }
+
+    &.active {
+      position: static;
+      //transform: translateX(0);
+      margin-left: 0;
+
+      .table-event {
+        position: static;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+}

@@ -1,0 +1,65 @@
+.table {
+  width: 100%;
+  border: 1px solid $fill;
+  border-collapse: collapse;
+
+  th, td {
+    height: 3.5vw;
+    border: 1px solid $fill;
+    border-collapse: collapse;
+  }
+
+  &__caption {
+    padding: 2.8% 5.5%;
+
+    font-size: .9em;
+    font-weight: 700;
+    color: rgba($grey-light, .8);
+    text-align: left;
+    text-transform: uppercase;
+
+    background-color: $blue-light;
+  }
+
+  &__head {
+    width: 50%;
+
+    font-size: 1.2em;
+    font-weight: 500;
+    color: $grey;
+
+    &--min {
+      width: 17%;
+    }
+
+    &--standard {
+      width: 41.5%;
+    }
+  }
+
+  &__button {
+    width: calc(100% + 2px);
+    height: 100%;
+
+    font-family: $muller;
+    font-weight: 500;
+    font-size: 1.2em;
+
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: $blue;
+      outline: none;
+      box-shadow: 0 0 0 1px $grey;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $green;
+      color: $white;
+      outline: none;
+      box-shadow: 0 0 0 1px $green;
+    }
+  }
+}
