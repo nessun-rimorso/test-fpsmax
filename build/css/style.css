@@ -536,7 +536,7 @@ a {
     position: relative;
     display: block; }
     .team__bet:first-of-type {
-      padding-right: 9%; }
+      padding-right: 4%; }
       .team__bet:first-of-type::before {
         content: '';
         position: absolute;
@@ -550,7 +550,7 @@ a {
         border-radius: 50%;
         background-color: #646970; }
     .team__bet:last-of-type {
-      padding-left: 9%; }
+      padding-left: 4%; }
   .team__name {
     font-size: 1.33em;
     line-height: 1.1;
@@ -615,12 +615,12 @@ a {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
   .team--right .team__bet:first-of-type {
-    padding-left: 7%;
+    padding-left: 4%;
     padding-right: 0; }
     .team--right .team__bet:first-of-type::before {
       content: none; }
   .team--right .team__bet:last-of-type {
-    padding-right: 7%;
+    padding-right: 4%;
     padding-left: 0; }
     .team--right .team__bet:last-of-type::before {
       content: '';
